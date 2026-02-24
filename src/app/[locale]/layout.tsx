@@ -1,21 +1,15 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Instrument_Sans, DM_Sans } from 'next/font/google';
+import { Instrument_Sans } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
-  variable: '--font-heading',
+  variable: '--font-sans',
   weight: ['400', '500', '600', '700'],
-});
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['300', '400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -38,7 +32,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${instrumentSans.variable} ${dmSans.variable}`}>
+    <html lang={locale} className={instrumentSans.variable}>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
