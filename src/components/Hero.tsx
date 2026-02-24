@@ -1,156 +1,166 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
-  }),
-};
+const LOGOS = [
+  { name: 'Pigliacelli', src: '/logos/pigliacelli.svg' },
+  { name: 'Gat Foods',   src: '/logos/gat-foods.svg'   },
+  { name: 'Tuborg',      src: '/logos/tuborg.svg'       },
+];
+
+function Marquee() {
+  const t = useTranslations('hero');
+  return (
+    <div className="bg-white border-t border-gray-100">
+      <div className="flex items-center">
+        {/* "Trusted by:" label */}
+        <div className="shrink-0 px-6 py-4 border-r border-gray-200">
+          <p className="text-gray-500 text-sm font-medium whitespace-nowrap" style={{ fontFamily: 'var(--font-body)' }}>
+            {t('trustedBy')}
+          </p>
+        </div>
+        {/* Scrolling logos */}
+        <div className="overflow-hidden flex-1">
+          <div className="flex animate-marquee gap-12 items-center py-4 w-max">
+            {[...LOGOS, ...LOGOS].map((logo, i) => (
+              <img
+                key={i}
+                src={logo.src}
+                alt={logo.name}
+                className="h-7 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity px-2"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RotatingIndustry({ industries }: { industries: string[] }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % industries.length);
+    }, 2500);
+    return () => clearInterval(id);
+  }, [industries.length]);
+
+  return (
+    <div className="relative h-[1.1em] overflow-hidden inline-block min-w-[220px] md:min-w-[340px]">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={index}
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -40, opacity: 0 }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute left-0 text-white"
+        >
+          {industries[index]}
+        </motion.span>
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const industries = t.raw('industries') as string[];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
-      {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#e8481c]/10 blur-[120px]" />
-        <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] rounded-full bg-[#0099ff]/5 blur-[100px]" />
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* ── Video background ─────────────────────────────── */}
+      <div className="absolute inset-0">
+        {/*
+          Replace the src below with your actual video file path.
+          Put the video in /public/hero.mp4 and it will work automatically.
+          Example: <video src="/hero.mp4" ... />
+        */}
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          src="/hero.mp4"
+        />
+        {/* Dark overlay so text stays readable */}
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
+      {/* ── Main content ─────────────────────────────────── */}
+      <div className="relative flex-1 flex flex-col justify-end max-w-7xl mx-auto w-full px-6 pb-0">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 pb-12">
 
-      <div className="relative max-w-6xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <motion.div
-          custom={0}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/70 text-sm mb-8"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#e8481c] animate-pulse" />
-          {t('badge')}
-        </motion.div>
+          {/* Left — headline block */}
+          <div className="max-w-2xl">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
+              {t('headline')}
+            </motion.h1>
 
-        {/* Headline */}
-        <motion.h1
-          custom={1}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 font-[var(--font-heading)]"
-        >
-          {t('headline')}
-        </motion.h1>
+            {/* Divider */}
+            <motion.div
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="h-px bg-white/30 mb-6 origin-left"
+            />
 
-        {/* Subheadline */}
-        <motion.p
-          custom={2}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed mb-10"
-        >
-          {t('subheadline')}
-        </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          custom={3}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <a
-            href="#contact"
-            className="px-7 py-3.5 bg-[#e8481c] text-white font-semibold rounded-xl hover:bg-[#d43d14] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-sm"
-          >
-            {t('cta')}
-          </a>
-          <a
-            href="#features"
-            className="px-7 py-3.5 text-white/70 hover:text-white font-medium rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-200 text-sm flex items-center gap-2"
-          >
-            {t('ctaSecondary')}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="m9 18 6-6-6-6"/>
-            </svg>
-          </a>
-        </motion.div>
-
-        {/* Dashboard mockup */}
-        <motion.div
-          custom={4}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="mt-20 relative"
-        >
-          <div className="glass rounded-2xl p-1 max-w-4xl mx-auto glow-orange">
-            <div className="bg-[#242729] rounded-xl overflow-hidden">
-              {/* Mockup title bar */}
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5">
-                <div className="w-3 h-3 rounded-full bg-[#e8481c]/70" />
-                <div className="w-3 h-3 rounded-full bg-white/20" />
-                <div className="w-3 h-3 rounded-full bg-white/20" />
-                <div className="flex-1 mx-4">
-                  <div className="bg-white/5 rounded-md h-5 max-w-[200px] mx-auto" />
-                </div>
-              </div>
-              {/* Mockup content */}
-              <div className="p-6 grid grid-cols-3 gap-4">
-                {[
-                  { label: 'Safety Score', value: '98.4%', color: '#e8481c' },
-                  { label: 'Incidents Today', value: '0', color: '#0099ff' },
-                  { label: 'Compliance', value: '100%', color: '#22c55e' },
-                ].map((stat) => (
-                  <div key={stat.label} className="bg-white/3 rounded-xl p-4 border border-white/5">
-                    <p className="text-white/40 text-xs mb-2">{stat.label}</p>
-                    <p className="text-2xl font-bold font-[var(--font-heading)]" style={{ color: stat.color }}>
-                      {stat.value}
-                    </p>
-                    <div className="mt-3 h-1 bg-white/5 rounded-full">
-                      <div className="h-1 rounded-full w-4/5" style={{ background: stat.color, opacity: 0.5 }} />
-                    </div>
-                  </div>
-                ))}
-                <div className="col-span-3 bg-white/3 rounded-xl p-4 border border-white/5">
-                  <p className="text-white/40 text-xs mb-3">Activity — Last 7 Days</p>
-                  <div className="flex items-end gap-2 h-16">
-                    {[40, 65, 45, 80, 60, 90, 75].map((h, i) => (
-                      <div
-                        key={i}
-                        className="flex-1 rounded-sm opacity-70"
-                        style={{
-                          height: `${h}%`,
-                          background: i === 5 ? '#e8481c' : 'rgba(255,255,255,0.15)',
-                        }}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Subheadline */}
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-white/70 text-base md:text-lg leading-relaxed"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              {t('subheadline')}{' '}
+              <span className="text-white font-semibold">{t('acronym')}</span>
+            </motion.p>
           </div>
-          {/* Bottom fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1b1d1f] to-transparent rounded-b-2xl" />
-        </motion.div>
+
+          {/* Right — "for Industry" rotating text */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="md:text-right shrink-0"
+          >
+            <p
+              className="text-white/60 text-lg md:text-2xl font-medium mb-1"
+              style={{ fontFamily: 'var(--font-body)' }}
+            >
+              {t('for')}
+            </p>
+            <div
+              className="text-white text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
+              <RotatingIndustry industries={industries} />
+            </div>
+          </motion.div>
+        </div>
       </div>
+
+      {/* ── Trusted by marquee ───────────────────────────── */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        className="relative"
+      >
+        <Marquee />
+      </motion.div>
     </section>
   );
 }
