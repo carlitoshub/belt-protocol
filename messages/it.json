@@ -13,50 +13,117 @@
     "acronym": "Comportamenti, Coinvolgimento, Leadership e Lavoro di Squadra.",
     "trustedBy": "Scelto da:"
   },
-  "features": {
-    "sectionLabel": "Perché BELT",
-    "headline": "Progettato per il campo",
-    "subheadline": "Ogni componente è progettato per rendere la sicurezza una parte naturale del modo in cui lavora il tuo team.",
+  "about": {
+    "label": "Chi Siamo",
+    "headline": "La sicurezza non è una regola. È una mentalità.",
+    "mission": {
+      "title": "La Nostra Missione",
+      "text": "Trasformare la sicurezza sul lavoro da una lista di controllo in una cultura in cui ogni azione contribuisce a costruire un team più sicuro, più coinvolto e responsabilizzato."
+    },
+    "approach": {
+      "title": "Il Nostro Approccio",
+      "text": "Invece di affidarci alla colpevolizzazione o a misure punitive, ci concentriamo sul rinforzo positivo, la collaborazione e il coinvolgimento per generare un cambiamento reale."
+    },
+    "belief": {
+      "title": "La Nostra Filosofia",
+      "text": "BELT si basa sulla convinzione che la maggior parte degli incidenti sul lavoro sia causata da comportamenti non sicuri, non solo da condizioni non sicure. Affrontando questi comportamenti e responsabilizzando i dipendenti a tutti i livelli, BELT crea miglioramenti duraturi nella cultura della sicurezza, produttività e morale."
+    },
+    "stat1Value": "300+",
+    "stat1Label": "Blue Belt Diplomati",
+    "stat2Value": "15k",
+    "stat2Label": "Comportamenti Monitorati",
+    "moreLink": "Scopri di più su di noi"
+  },
+  "faq": {
+    "intro": "Trasformiamo i luoghi di lavoro in comunità prospere e resilienti dove la sicurezza è responsabilità di tutti.",
     "items": [
       {
-        "title": "Sicurezza Basata sul Comportamento",
-        "description": "Passa da un approccio reattivo a uno proattivo osservando e rinforzando i comportamenti sicuri."
+        "question": "Quali sono i benefici tangibili, economici o produttivi che l'adozione della metodologia BELT può portare alle aziende?",
+        "answer": "Le aziende che adottano BELT registrano tipicamente una riduzione dei tassi di incidenti, costi assicurativi più bassi, morale migliorato dei dipendenti e maggiore produttività. L'approccio basato sul comportamento crea miglioramenti misurabili e tracciabili in tutti i KPI di sicurezza."
       },
       {
-        "title": "Programmi di Coinvolgimento",
-        "description": "Costruisci una cultura in cui ogni lavoratore si sente responsabile della sicurezza — non solo i supervisori."
+        "question": "Esiste una correlazione misurabile tra la cultura della sicurezza introdotta da BELT e il miglioramento delle performance aziendali?",
+        "answer": "Sì. Le organizzazioni con culture della sicurezza forti superano costantemente i concorrenti — meno giorni lavorativi persi, minor turnover e punteggi di coinvolgimento più elevati. BELT fornisce il framework per costruire e misurare sistematicamente quella cultura."
       },
       {
-        "title": "Allineamento della Leadership",
-        "description": "Fornisci ai leader a tutti i livelli gli strumenti e il linguaggio per guidare standard di sicurezza coerenti."
+        "question": "Cosa fare se alcuni manager percepiscono BELT come una complicazione aggiuntiva o una perdita di tempo? Come gestire questa resistenza?",
+        "answer": "La resistenza è normale e attesa. BELT affronta questo attraverso workshop di leadership che riformulano la sicurezza come vantaggio strategico, non come un peso. I primi risultati — tracciati e condivisi visibilmente — aiutano a convincere rapidamente gli scettici."
       },
       {
-        "title": "Framework di Lavoro di Squadra",
-        "description": "Protocolli strutturati che rendono il coordinamento della sicurezza fluido tra turni e reparti."
+        "question": "Qual è l'errore più comune che le aziende commettono quando cercano di cambiare la cultura della sicurezza?",
+        "answer": "L'errore più comune è concentrarsi su regole e conformità piuttosto che su comportamenti e mentalità. Dire alle persone cosa non fare non costruisce cultura. BELT si concentra sul rinforzare ciò che le persone fanno bene, il che crea cambiamenti duraturi."
       },
       {
-        "title": "Prevenzione degli Incidenti",
-        "description": "Identifica i modelli di rischio in anticipo e intervieni prima che si verifichino incidenti — non dopo."
+        "question": "Quanto tempo ci vuole per vedere risultati tangibili applicando BELT e qual è la prima cosa che cambia in un'azienda dopo aver adottato questo metodo?",
+        "answer": "La maggior parte delle organizzazioni inizia a vedere cambiamenti comportamentali misurabili entro i primi 60–90 giorni. Il primo cambiamento visibile è quasi sempre la comunicazione — i team iniziano a parlare diversamente di sicurezza e la segnalazione di quasi-incidenti aumenta perché la fiducia è cresciuta."
+      }
+    ]
+  },
+  "principles": {
+    "label": "I 4 Principi di BELT",
+    "items": [
+      {
+        "number": "1/",
+        "title": "Comportamento",
+        "text": "L'elemento Comportamento di BELT si concentra sull'identificare le azioni critiche e rinforzare le pratiche sicure attraverso riconoscimento e incoraggiamento."
       },
       {
-        "title": "Risultati Misurabili",
-        "description": "Monitora i progressi della cultura della sicurezza con metriche chiare su cui tutta l'organizzazione può agire."
+        "number": "2/",
+        "title": "Coinvolgimento",
+        "text": "Il Coinvolgimento garantisce che ogni lavoratore abbia voce in capitolo sulla sicurezza. Quando le persone si sentono ascoltate e coinvolte, diventano partecipanti attivi piuttosto che destinatari passivi di regole."
+      },
+      {
+        "number": "3/",
+        "title": "Leadership",
+        "text": "I leader danno il tono. BELT fornisce a manager e supervisori gli strumenti per modellare comportamenti sicuri e creare sicurezza psicologica sul campo."
+      },
+      {
+        "number": "4/",
+        "title": "Team",
+        "text": "La sicurezza è uno sport di squadra. BELT costruisce framework per la responsabilità collettiva, l'osservazione tra colleghi e la risoluzione collaborativa dei problemi in tutti i reparti."
+      }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "headline": "Notizie dal mondo BELT",
+    "readAll": "Leggi tutto il Blog",
+    "readMore": "Leggi di Più",
+    "posts": [
+      {
+        "date": "11 Ott 2025",
+        "category": "Training",
+        "title": "Notizie dal Training BELT di Schaeffler Ghimbav",
+        "excerpt": "Dopo una lunga sessione di training BELT abbiamo avuto il piacere di ricevere il feedback finale da Sunil Mahesh Mougalya, Plant Manager di Schaeffler Ghimbav."
+      },
+      {
+        "date": "8 Apr 2025",
+        "category": "Training",
+        "title": "Completato il Primo Training Blue Belt",
+        "excerpt": "Schaeffler Romania ha celebrato un grande successo con la cerimonia ufficiale per i nuovi Ambasciatori Blue BELT, segnando un momento trasformativo nel percorso di sicurezza dell'azienda."
+      },
+      {
+        "date": "24 Mag 2024",
+        "category": "Conferenza",
+        "title": "BELT Protocol @EverythingHR 2024",
+        "excerpt": "Alla conferenza EverythingHR 2024 di Brașov, Enrico Banchi ha tenuto un intervento convincente sul sistema BELT — un approccio pratico e basato su evidenze per trasformare la sicurezza sul lavoro."
       }
     ]
   },
   "cta": {
-    "headline": "Pronto a costruire un posto di lavoro più sicuro?",
-    "subheadline": "Unisciti alle organizzazioni che già utilizzano BELT per trasformare la loro cultura della sicurezza.",
-    "button": "Contattaci",
-    "buttonSecondary": "Prenota una Demo"
+    "label": "Sicurezza Oltre i Protocolli",
+    "headline": "BELT è il sistema definitivo per aumentare gli standard di sicurezza in un ambiente di fabbrica e logistica.",
+    "button": "Contattaci"
   },
   "footer": {
     "tagline": "Sicurezza Oltre i Protocolli",
+    "quickLinks": "Link Rapidi",
     "about": "Chi Siamo",
     "blog": "Blog",
-    "contact": "Contatti",
-    "privacy": "Informativa sulla Privacy",
-    "terms": "Termini di Servizio",
-    "copyright": "© 2025 BELT. Tutti i diritti riservati."
+    "socialMedia": "Social Media",
+    "substack": "Substack",
+    "linkedin": "LinkedIn",
+    "copyright": "Copyright © 2025 BELT. Tutti i diritti riservati.",
+    "email": "info@beltprotocol.com"
   }
 }

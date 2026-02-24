@@ -13,50 +13,117 @@
     "acronym": "Comportamente, Angajament, Leadership și Muncă în Echipă.",
     "trustedBy": "Parteneri de încredere:"
   },
-  "features": {
-    "sectionLabel": "De Ce BELT",
-    "headline": "Construit pentru teren",
-    "subheadline": "Fiecare componentă este concepută pentru a face siguranța o parte naturală din modul în care lucrează echipa ta.",
+  "about": {
+    "label": "Despre noi",
+    "headline": "Siguranța nu e o regulă. E o mentalitate.",
+    "mission": {
+      "title": "Misiunea Noastră",
+      "text": "Transformăm siguranța la locul de muncă dintr-o listă de verificare într-o cultură în care fiecare acțiune contribuie la construirea unei echipe mai sigure, mai implicate și mai responsabilizate."
+    },
+    "approach": {
+      "title": "Abordarea Noastră",
+      "text": "În loc să ne bazăm pe învinuire sau măsuri punitive, ne concentrăm pe întărire pozitivă, colaborare și responsabilizare pentru a genera schimbări reale."
+    },
+    "belief": {
+      "title": "Convingerile Noastre",
+      "text": "BELT este construit pe convingerea că majoritatea accidentelor de muncă sunt cauzate de comportamente nesigure, nu doar de condiții nesigure. Prin abordarea acestor comportamente și responsabilizarea angajaților la fiecare nivel, BELT creează îmbunătățiri durabile în cultura siguranței, productivitate și moralul echipei."
+    },
+    "stat1Value": "300+",
+    "stat1Label": "Blue Belts Absolvenți",
+    "stat2Value": "15k",
+    "stat2Label": "Comportamente Monitorizate",
+    "moreLink": "Mai multe despre noi"
+  },
+  "faq": {
+    "intro": "Transformăm locurile de muncă în comunități prospere și reziliente unde siguranța este responsabilitatea tuturor.",
     "items": [
       {
-        "title": "Siguranță Bazată pe Comportament",
-        "description": "Treci de la o abordare reactivă la una proactivă prin observarea și consolidarea comportamentelor sigure."
+        "question": "Care sunt beneficiile tangibile, economice sau productive pe care adoptarea metodologiei BELT le poate aduce companiilor?",
+        "answer": "Companiile care adoptă BELT înregistrează de obicei o reducere a ratei incidentelor, costuri mai mici de asigurare, moral îmbunătățit al angajaților și productivitate crescută. Abordarea bazată pe comportament creează îmbunătățiri măsurabile și urmăribile în toți KPI-ii de siguranță."
       },
       {
-        "title": "Programe de Angajament",
-        "description": "Construiește o cultură în care fiecare angajat se simte responsabil pentru siguranță — nu doar supervizorii."
+        "question": "Există o corelație măsurabilă între cultura siguranței introdusă de BELT și îmbunătățirea performanței companiei?",
+        "answer": "Da. Organizațiile cu culturi puternice de siguranță depășesc constant concurenții — mai puține zile de muncă pierdute, rotație mai mică și scoruri mai mari de implicare. BELT oferă cadrul pentru a construi și măsura sistematic această cultură."
       },
       {
-        "title": "Alinierea Leadershipului",
-        "description": "Oferă liderilor de la toate nivelurile instrumentele și limbajul pentru a conduce standarde de siguranță consistente."
+        "question": "Ce trebuie făcut dacă unii manageri percep BELT ca o complicație suplimentară sau o pierdere de timp? Cum poate fi gestionată această rezistență?",
+        "answer": "Rezistența este normală și așteptată. BELT abordează acest lucru prin ateliere de leadership care recadrează siguranța ca avantaj strategic, nu ca o povară. Câștigurile timpurii — urmărite și împărtășite vizibil — ajută la aducerea scepticilor de partea noastră rapid."
       },
       {
-        "title": "Cadre de Lucru în Echipă",
-        "description": "Protocoale structurate care fac coordonarea siguranței fără probleme între schimburi și departamente."
+        "question": "Care este cea mai frecventă greșeală pe care companiile o fac atunci când încearcă să schimbe cultura siguranței?",
+        "answer": "Cea mai frecventă greșeală este concentrarea pe reguli și conformitate mai degrabă decât pe comportamente și mentalități. A spune oamenilor ce să nu facă nu construiește cultură. BELT se concentrează pe întărirea a ceea ce oamenii fac bine, ceea ce creează schimbări durabile."
       },
       {
-        "title": "Prevenirea Incidentelor",
-        "description": "Identifică tiparele de risc timpuriu și intervine înainte ca incidentele să apară — nu după."
+        "question": "Cât timp durează să se vadă rezultate tangibile la aplicarea BELT și care este primul lucru care se schimbă într-o companie după adoptarea acestei metode?",
+        "answer": "Majoritatea organizațiilor încep să vadă schimbări comportamentale măsurabile în primele 60–90 de zile. Prima schimbare vizibilă este aproape întotdeauna comunicarea — echipele încep să vorbească diferit despre siguranță și raportarea aproape-accidentelor crește deoarece încrederea a crescut."
+      }
+    ]
+  },
+  "principles": {
+    "label": "Cele 4 Principii BELT",
+    "items": [
+      {
+        "number": "1/",
+        "title": "Comportament",
+        "text": "Elementul Comportament din BELT se concentrează pe identificarea acțiunilor critice și consolidarea practicilor sigure prin recunoaștere și încurajare."
       },
       {
-        "title": "Rezultate Măsurabile",
-        "description": "Urmărește progresul culturii de siguranță cu valori clare pe care întreaga organizație le poate folosi."
+        "number": "2/",
+        "title": "Angajament",
+        "text": "Angajamentul asigură că fiecare angajat are un cuvânt de spus în materie de siguranță. Când oamenii se simt ascultați și implicați, devin participanți activi mai degrabă decât receptori pasivi ai regulilor."
+      },
+      {
+        "number": "3/",
+        "title": "Leadership",
+        "text": "Liderii dau tonul. BELT echipează managerii și supervizorii cu instrumentele pentru a modela comportamentele sigure și a crea siguranță psihologică pe teren."
+      },
+      {
+        "number": "4/",
+        "title": "Echipe",
+        "text": "Siguranța este un sport de echipă. BELT construiește cadre pentru responsabilitate colectivă, observare între colegi și rezolvare colaborativă a problemelor în toate departamentele."
+      }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "headline": "Noutăți din lumea BELT",
+    "readAll": "Citește tot blogul",
+    "readMore": "Citește Mai Mult",
+    "posts": [
+      {
+        "date": "11 Oct 2025",
+        "category": "Training",
+        "title": "Noutăți de la Training-ul BELT Schaeffler Ghimbav",
+        "excerpt": "După o lungă sesiune de training BELT, am avut plăcerea să ascultăm feedback-ul final de la Sunil Mahesh Mougalya, Plant Manager la Schaeffler Ghimbav."
+      },
+      {
+        "date": "8 Apr 2025",
+        "category": "Training",
+        "title": "Primul Training Blue Belts Finalizat",
+        "excerpt": "Schaeffler România a celebrat un mare succes cu ceremonia oficială pentru noii Ambasadori Blue BELT, marcând un moment transformator în parcursul companiei."
+      },
+      {
+        "date": "24 Mai 2024",
+        "category": "Conferință",
+        "title": "BELT Protocol @EverythingHR 2024",
+        "excerpt": "La conferința EverythingHR 2024 din Brașov, Enrico Banchi a susținut o prezentare convingătoare despre sistemul BELT — o abordare practică, bazată pe dovezi."
       }
     ]
   },
   "cta": {
-    "headline": "Pregătit să construiești un loc de muncă mai sigur?",
-    "subheadline": "Alătură-te organizațiilor care folosesc deja BELT pentru a-și transforma cultura de siguranță.",
-    "button": "Ia Legătura",
-    "buttonSecondary": "Rezervă o Demonstrație"
+    "label": "Siguranță Dincolo de Protocoale",
+    "headline": "BELT este sistemul definitiv pentru creșterea standardelor de securitate într-un mediu de fabrică și logistică.",
+    "button": "Contactează-ne"
   },
   "footer": {
     "tagline": "Siguranță Dincolo de Protocoale",
-    "about": "Despre",
+    "quickLinks": "Linkuri Rapide",
+    "about": "Despre Noi",
     "blog": "Blog",
-    "contact": "Contact",
-    "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
-    "copyright": "© 2025 BELT. Toate drepturile rezervate."
+    "socialMedia": "Rețele Sociale",
+    "substack": "Substack",
+    "linkedin": "LinkedIn",
+    "copyright": "Copyright © 2025 BELT. Toate drepturile rezervate.",
+    "email": "info@beltprotocol.com"
   }
 }

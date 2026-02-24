@@ -13,50 +13,117 @@
     "acronym": "Behaviors, Engagement, Leadership, and Teamwork.",
     "trustedBy": "Trusted by:"
   },
-  "features": {
-    "sectionLabel": "Why BELT",
-    "headline": "Built for the field",
-    "subheadline": "Every component is designed to make safety a natural part of how your team works.",
+  "about": {
+    "label": "About us",
+    "headline": "Safety isn't a rule. It's a mindset.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Transform workplace safety from a checklist into a culture where every action helps building a safer, more engaged, and empowered team."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "text": "Rather than relying on blame or punitive measures, we focus on positive reinforcement, collaboration, and empowerment to drive real change."
+    },
+    "belief": {
+      "title": "Our Belief",
+      "text": "BELT is built on the belief that most workplace accidents are caused by unsafe behaviors, not just unsafe conditions. By targeting these behaviors and empowering employees at every level, BELT creates lasting improvements in safety culture, productivity, and morale."
+    },
+    "stat1Value": "300+",
+    "stat1Label": "Graduated Blue Belts",
+    "stat2Value": "15k",
+    "stat2Label": "Behaviors Tracked",
+    "moreLink": "More about us"
+  },
+  "faq": {
+    "intro": "Transforming workplaces into thriving, resilient communities where safety is everyone's business.",
     "items": [
       {
-        "title": "Behavior-Based Safety",
-        "description": "Shift from reactive to proactive safety by observing and reinforcing safe behaviors across your workforce."
+        "question": "What are the tangible, economic, or productive benefits that adopting the BELT methodology can bring to companies?",
+        "answer": "Companies that adopt BELT typically see a reduction in incident rates, lower insurance costs, improved employee morale, and increased productivity. The behavior-based approach creates measurable, trackable improvements across all safety KPIs."
       },
       {
-        "title": "Engagement Programs",
-        "description": "Build a culture where every worker feels responsible for safety — not just supervisors."
+        "question": "Is there a measurable correlation between the safety culture introduced by BELT and improved company performance?",
+        "answer": "Yes. Organizations with strong safety cultures consistently outperform their peers — fewer lost workdays, lower turnover, and higher engagement scores. BELT provides the framework to build and measure that culture systematically."
       },
       {
-        "title": "Leadership Alignment",
-        "description": "Equip leaders at every level with the tools and language to drive consistent safety standards."
+        "question": "What should be done if some managers perceive BELT as an additional complication or a waste of time? How can this resistance be managed?",
+        "answer": "Resistance is normal and expected. BELT addresses this through leadership workshops that reframe safety as a strategic advantage, not a burden. Early wins — tracked and shared visibly — help bring skeptics on board quickly."
       },
       {
-        "title": "Teamwork Frameworks",
-        "description": "Structured protocols that make safety coordination seamless across shifts and departments."
+        "question": "What is the most common mistake companies make when trying to change their safety culture?",
+        "answer": "The most common mistake is focusing on rules and compliance rather than behaviors and mindsets. Telling people what not to do doesn't build culture. BELT focuses on reinforcing what people do right, which creates lasting change."
       },
       {
-        "title": "Incident Prevention",
-        "description": "Identify risk patterns early and intervene before incidents occur — not after."
+        "question": "How long does it take to see tangible results when applying BELT, and what is the first thing that changes in a company after adopting this method?",
+        "answer": "Most organizations begin to see measurable behavioral shifts within the first 60–90 days. The first visible change is almost always communication — teams start talking about safety differently, and reporting near-misses increases because trust has grown."
+      }
+    ]
+  },
+  "principles": {
+    "label": "The 4 Principles of BELT",
+    "items": [
+      {
+        "number": "1/",
+        "title": "Behavior",
+        "text": "The Behavior element of BELT focuses on identifying critical actions and reinforcing safe practices through recognition and encouragement."
       },
       {
-        "title": "Measurable Results",
-        "description": "Track safety culture progress with clear metrics your whole organization can act on."
+        "number": "2/",
+        "title": "Engagement",
+        "text": "Engagement ensures every worker has a voice in safety. When people feel heard and involved, they become active participants rather than passive recipients of rules."
+      },
+      {
+        "number": "3/",
+        "title": "Leadership",
+        "text": "Leaders set the tone. BELT equips managers and supervisors with the tools to model safe behaviors and create psychological safety on the floor."
+      },
+      {
+        "number": "4/",
+        "title": "Teams",
+        "text": "Safety is a team sport. BELT builds frameworks for collective responsibility, peer observation, and collaborative problem-solving across all departments."
+      }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "headline": "News from BELT's world",
+    "readAll": "Read All Blog",
+    "readMore": "Read More",
+    "posts": [
+      {
+        "date": "Oct 11, 2025",
+        "category": "Training",
+        "title": "News from BELT Training of Schaeffler Ghimbav",
+        "excerpt": "After a long session of BELT training we've had the pleasure of hearing a final feedback from Sunil Mahesh Mougalya, Plant Manager at Schaeffler Ghimbav."
+      },
+      {
+        "date": "Apr 8, 2025",
+        "category": "Training",
+        "title": "First Training of Blue Belts Completed",
+        "excerpt": "Schaeffler Romania has celebrated a major success with the official ceremony for its new Blue BELT Ambassadors, marking a transformative moment in the company's safety journey."
+      },
+      {
+        "date": "May 24, 2024",
+        "category": "Conference",
+        "title": "BELT Protocol @EverythingHR 2024 Conference",
+        "excerpt": "At the EverythingHR 2024 conference in Brasov, Romania, Enrico Banchi delivered a compelling keynote on the BELT system — a practical, evidence-based approach to transforming workplace safety and culture."
       }
     ]
   },
   "cta": {
-    "headline": "Ready to build a safer workplace?",
-    "subheadline": "Join the organizations already using BELT to transform their safety culture.",
-    "button": "Get in Touch",
-    "buttonSecondary": "Book a Demo"
+    "label": "Safety Beyond Protocols",
+    "headline": "BELT is the ultimate system for increasing security standards inside a factory & logistics environment.",
+    "button": "Contact Us"
   },
   "footer": {
     "tagline": "Safety Beyond Protocols",
-    "about": "About",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
     "blog": "Blog",
-    "contact": "Contact",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "copyright": "© 2025 BELT. All rights reserved."
+    "socialMedia": "Social Media",
+    "substack": "Substack",
+    "linkedin": "LinkedIn",
+    "copyright": "Copyright © 2025 BELT. All rights reserved.",
+    "email": "info@beltprotocol.com"
   }
 }

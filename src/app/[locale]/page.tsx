@@ -1,7 +1,9 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Torch from '@/components/Torch';
+import About from '@/components/About';
+import FAQ from '@/components/FAQ';
+import Principles from '@/components/Principles';
+import BlogSection from '@/components/BlogSection';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
@@ -11,8 +13,10 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
-        <Features />
-        <Torch />
+        <About />
+        <FAQ />
+        <Principles />
+        <BlogSection />
         <CTA />
       </main>
       <Footer />
