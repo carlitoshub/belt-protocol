@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Funzionalità",
+    "torch": "Torch",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "getStarted": "Inizia"
+  },
+  "hero": {
+    "badge": "Sicurezza Oltre i Protocolli",
+    "headline": "Il protocollo definitivo per la sicurezza in fabbrica",
+    "subheadline": "BELT ti aiuta a creare dashboard intuitive e personalizzate per visualizzare le tue metriche di sicurezza più importanti — in tempo reale, in ogni reparto.",
+    "cta": "Inizia",
+    "ctaSecondary": "Scopri di Più"
+  },
+  "features": {
+    "sectionLabel": "Perché BELT",
+    "headline": "Progettato per il pavimento della fabbrica",
+    "subheadline": "Ogni funzionalità è progettata per mantenere il tuo team al sicuro e le tue operazioni in esecuzione senza problemi.",
+    "items": [
+      {
+        "title": "Monitoraggio in Tempo Reale",
+        "description": "Monitora le metriche di sicurezza in tempo reale. Gli avvisi istantanei tengono informato il tuo team prima che gli incidenti si aggravino."
+      },
+      {
+        "title": "Dashboard Personalizzate",
+        "description": "Crea dashboard intuitive personalizzate per la tua operazione. Visualizza i KPI più importanti per il tuo team."
+      },
+      {
+        "title": "Conformità ai Protocolli",
+        "description": "Automatizza i controlli di conformità e genera report pronti per l'audit con un solo clic."
+      },
+      {
+        "title": "Gestione del Team",
+        "description": "Assegna ruoli, gestisci l'accesso e coordina il tuo team di sicurezza da un hub centrale."
+      },
+      {
+        "title": "Tracciamento degli Incidenti",
+        "description": "Registra, categorizza e risolvi gli incidenti più velocemente. Cronologia completa disponibile per analisi e revisione."
+      },
+      {
+        "title": "Approfondimenti Basati sui Dati",
+        "description": "Trasforma i dati grezzi sulla sicurezza in approfondimenti attuabili che guidano il miglioramento continuo."
+      }
+    ]
+  },
+  "torch": {
+    "sectionLabel": "Presentazione di Torch",
+    "headline": "Analisi che illuminano ogni angolo della tua operazione",
+    "subheadline": "Torch è il motore di analisi all'interno di BELT. Traccia, visualizza e ottimizza le metriche di performance in tempo reale. Consente ai team di prendere decisioni fiduciose e basate sui dati attraverso dashboard personalizzabili e approfondimenti potenti.",
+    "pointOne": "Dashboard personalizzabili in tempo reale",
+    "pointTwo": "Tracciamento KPI in tutti i reparti",
+    "pointThree": "Analisi predittiva della sicurezza",
+    "pointFour": "Report di audit con un clic",
+    "cta": "Esplora Torch",
+    "idealFor": "Ideale per startup, aziende tecnologiche e imprese in crescita che vogliono sfruttare la potenza dei propri dati — costruito per team che vogliono migliorare il processo decisionale tracciando gli indicatori chiave di performance in tutti i reparti."
+  },
+  "cta": {
+    "headline": "Pronto ad andare oltre i protocolli?",
+    "subheadline": "Unisciti ai team che già utilizzano BELT per creare ambienti di fabbrica più sicuri e intelligenti.",
+    "button": "Inizia Gratuitamente",
+    "buttonSecondary": "Prenota una Demo"
+  },
+  "footer": {
+    "tagline": "Sicurezza Oltre i Protocolli",
+    "product": "Prodotto",
+    "features": "Funzionalità",
+    "torch": "Torch",
+    "pricing": "Prezzi",
+    "changelog": "Registro Modifiche",
+    "company": "Azienda",
+    "about": "Chi Siamo",
+    "blog": "Blog",
+    "careers": "Carriere",
+    "contact": "Contatti",
+    "legal": "Legale",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Servizio",
+    "copyright": "© 2025 BELT. Tutti i diritti riservati."
+  }
+}

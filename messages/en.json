@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "torch": "Torch",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "Safety Beyond Protocols",
+    "headline": "The ultimate protocol for factory security",
+    "subheadline": "BELT helps you create intuitive, custom dashboards to visualize your most important safety metrics — in real time, across every department.",
+    "cta": "Get Started",
+    "ctaSecondary": "Learn More"
+  },
+  "features": {
+    "sectionLabel": "Why BELT",
+    "headline": "Built for the factory floor",
+    "subheadline": "Every feature is designed to keep your team safe and your operations running smoothly.",
+    "items": [
+      {
+        "title": "Real-Time Monitoring",
+        "description": "Track safety metrics as they happen. Instant alerts keep your team informed before incidents escalate."
+      },
+      {
+        "title": "Custom Dashboards",
+        "description": "Build intuitive dashboards tailored to your operation. Visualize KPIs that matter most to your team."
+      },
+      {
+        "title": "Protocol Compliance",
+        "description": "Automate compliance checks and generate audit-ready reports with a single click."
+      },
+      {
+        "title": "Team Management",
+        "description": "Assign roles, manage access, and coordinate your safety team from one central hub."
+      },
+      {
+        "title": "Incident Tracking",
+        "description": "Log, categorize, and resolve incidents faster. Full history available for analysis and review."
+      },
+      {
+        "title": "Data-Driven Insights",
+        "description": "Turn raw safety data into actionable insights that drive continuous improvement."
+      }
+    ]
+  },
+  "torch": {
+    "sectionLabel": "Introducing Torch",
+    "headline": "Analytics that illuminate every corner of your operation",
+    "subheadline": "Torch is the analytics engine inside BELT. Track, visualize, and optimize performance metrics in real time. Enable your teams to make confident, data-driven decisions through customizable dashboards and powerful insights.",
+    "pointOne": "Customizable real-time dashboards",
+    "pointTwo": "KPI tracking across all departments",
+    "pointThree": "Predictive safety analytics",
+    "pointFour": "One-click audit reports",
+    "cta": "Explore Torch",
+    "idealFor": "Ideal for startups, tech companies, and growing businesses that want to harness the power of their data — built for teams looking to improve decision-making by tracking key performance indicators across all departments."
+  },
+  "cta": {
+    "headline": "Ready to go beyond protocols?",
+    "subheadline": "Join the teams already using BELT to build safer, smarter factory environments.",
+    "button": "Start for Free",
+    "buttonSecondary": "Book a Demo"
+  },
+  "footer": {
+    "tagline": "Safety Beyond Protocols",
+    "product": "Product",
+    "features": "Features",
+    "torch": "Torch",
+    "pricing": "Pricing",
+    "changelog": "Changelog",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2025 BELT. All rights reserved."
+  }
+}

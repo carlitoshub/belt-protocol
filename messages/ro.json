@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "features": "Funcționalități",
+    "torch": "Torch",
+    "about": "Despre",
+    "contact": "Contact",
+    "getStarted": "Începe"
+  },
+  "hero": {
+    "badge": "Siguranță Dincolo de Protocoale",
+    "headline": "Protocolul definitiv pentru securitatea fabricii",
+    "subheadline": "BELT te ajută să creezi tablouri de bord intuitive și personalizate pentru a vizualiza cele mai importante valori de siguranță — în timp real, în fiecare departament.",
+    "cta": "Începe",
+    "ctaSecondary": "Află Mai Mult"
+  },
+  "features": {
+    "sectionLabel": "De Ce BELT",
+    "headline": "Construit pentru planșeul fabricii",
+    "subheadline": "Fiecare funcționalitate este concepută pentru a-ți menține echipa în siguranță și operațiunile să funcționeze fără probleme.",
+    "items": [
+      {
+        "title": "Monitorizare în Timp Real",
+        "description": "Urmărește valorile de siguranță pe măsură ce apar. Alertele instant țin echipa informată înainte ca incidentele să escaladeze."
+      },
+      {
+        "title": "Tablouri de Bord Personalizate",
+        "description": "Construiește tablouri de bord intuitive adaptate operațiunii tale. Vizualizează KPI-urile care contează cel mai mult pentru echipa ta."
+      },
+      {
+        "title": "Conformitate cu Protocoalele",
+        "description": "Automatizează verificările de conformitate și generează rapoarte pregătite pentru audit cu un singur clic."
+      },
+      {
+        "title": "Gestionarea Echipei",
+        "description": "Atribuie roluri, gestionează accesul și coordonează echipa de siguranță dintr-un hub central."
+      },
+      {
+        "title": "Urmărirea Incidentelor",
+        "description": "Înregistrează, categorizează și rezolvă incidentele mai rapid. Istoricul complet disponibil pentru analiză și revizuire."
+      },
+      {
+        "title": "Informații Bazate pe Date",
+        "description": "Transformă datele brute de siguranță în informații acționabile care conduc la îmbunătățire continuă."
+      }
+    ]
+  },
+  "torch": {
+    "sectionLabel": "Prezentăm Torch",
+    "headline": "Analize care iluminează fiecare colț al operațiunii tale",
+    "subheadline": "Torch este motorul de analiză din BELT. Urmărește, vizualizează și optimizează valorile de performanță în timp real. Permite echipelor să ia decizii încrezătoare, bazate pe date, prin tablouri de bord personalizabile și informații puternice.",
+    "pointOne": "Tablouri de bord personalizabile în timp real",
+    "pointTwo": "Urmărirea KPI-urilor în toate departamentele",
+    "pointThree": "Analize predictive de siguranță",
+    "pointFour": "Rapoarte de audit cu un singur clic",
+    "cta": "Explorează Torch",
+    "idealFor": "Ideal pentru startup-uri, companii tech și afaceri în creștere care doresc să valorifice puterea datelor lor — construit pentru echipe care doresc să îmbunătățească luarea deciziilor prin urmărirea indicatorilor cheie de performanță în toate departamentele."
+  },
+  "cta": {
+    "headline": "Gata să depășești protocoalele?",
+    "subheadline": "Alătură-te echipelor care folosesc deja BELT pentru a construi medii de fabrică mai sigure și mai inteligente.",
+    "button": "Începe Gratuit",
+    "buttonSecondary": "Rezervă o Demonstrație"
+  },
+  "footer": {
+    "tagline": "Siguranță Dincolo de Protocoale",
+    "product": "Produs",
+    "features": "Funcționalități",
+    "torch": "Torch",
+    "pricing": "Prețuri",
+    "changelog": "Jurnal de Modificări",
+    "company": "Companie",
+    "about": "Despre",
+    "blog": "Blog",
+    "careers": "Cariere",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni și Condiții",
+    "copyright": "© 2025 BELT. Toate drepturile rezervate."
+  }
+}
