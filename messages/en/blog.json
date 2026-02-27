@@ -1,0 +1,26 @@
+{
+  "label": "Blog",
+  "headline": "News from BELT's world",
+  "readAll": "Read All Blog",
+  "readMore": "Read More",
+  "posts": [
+    {
+      "date": "Oct 11, 2025",
+      "category": "Training",
+      "title": "News from BELT Training of Schaeffler Ghimbav",
+      "excerpt": "After a long session of BELT training we've had the pleasure of hearing a final feedback from Sunil Mahesh Mougalya, Plant Manager at Schaeffler Ghimbav."
+    },
+    {
+      "date": "Apr 8, 2025",
+      "category": "Training",
+      "title": "First Training of Blue Belts Completed",
+      "excerpt": "Schaeffler Romania has celebrated a major success with the official ceremony for its new Blue BELT Ambassadors, marking a transformative moment in the company's safety journey."
+    },
+    {
+      "date": "May 24, 2024",
+      "category": "Conference",
+      "title": "BELT Protocol @EverythingHR 2024 Conference",
+      "excerpt": "At the EverythingHR 2024 conference in Brasov, Romania, Enrico Banchi delivered a compelling keynote on the BELT system — a practical, evidence-based approach to transforming workplace safety and culture."
+    }
+  ]
+}

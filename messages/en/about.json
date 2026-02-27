@@ -1,0 +1,21 @@
+{
+  "label": "About us",
+  "headline": "Safety isn't a rule. It's a mindset.",
+  "mission": {
+    "title": "Our Mission",
+    "text": "Transform workplace safety from a checklist into a culture where every action helps building a safer, more engaged, and empowered team."
+  },
+  "approach": {
+    "title": "Our Approach",
+    "text": "Rather than relying on blame or punitive measures, we focus on positive reinforcement, collaboration, and empowerment to drive real change."
+  },
+  "belief": {
+    "title": "Our Belief",
+    "text": "BELT is built on the belief that most workplace accidents are caused by unsafe behaviors, not just unsafe conditions. By targeting these behaviors and empowering employees at every level, BELT creates lasting improvements in safety culture, productivity, and morale."
+  },
+  "stat1Value": "300+",
+  "stat1Label": "Graduated Blue Belts",
+  "stat2Value": "15k",
+  "stat2Label": "Behaviors Tracked",
+  "moreLink": "More about us"
+}

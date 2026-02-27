@@ -1,0 +1,25 @@
+{
+  "label": "The 4 Principles of BELT",
+  "items": [
+    {
+      "number": "1/",
+      "title": "Behavior",
+      "text": "The Behavior element of BELT focuses on identifying critical actions and reinforcing safe practices through recognition and encouragement."
+    },
+    {
+      "number": "2/",
+      "title": "Engagement",
+      "text": "Engagement ensures every worker has a voice in safety. When people feel heard and involved, they become active participants rather than passive recipients of rules."
+    },
+    {
+      "number": "3/",
+      "title": "Leadership",
+      "text": "Leaders set the tone. BELT equips managers and supervisors with the tools to model safe behaviors and create psychological safety on the floor."
+    },
+    {
+      "number": "4/",
+      "title": "Teams",
+      "text": "Safety is a team sport. BELT builds frameworks for collective responsibility, peer observation, and collaborative problem-solving across all departments."
+    }
+  ]
+}

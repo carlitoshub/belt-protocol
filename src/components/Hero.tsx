@@ -11,10 +11,12 @@ const LOGOS = [
 ];
 
 function Marquee() {
+  const t = useTranslations('hero');
   return (
-    <div className="bg-white border-t border-gray-100 overflow-hidden py-4">
+    <div className="relative bg-white border-t border-gray-100 overflow-hidden py-4">
+      {/* Logos scroll edge-to-edge — 12 reps ensures seamless coverage up to QHD */}
       <div className="flex animate-marquee gap-16 items-center w-max">
-        {Array.from({ length: 8 }, () => LOGOS).flat().map((logo, i) => (
+        {Array.from({ length: 12 }, () => LOGOS).flat().map((logo, i) => (
           <img
             key={i}
             src={logo.src}
@@ -22,6 +24,15 @@ function Marquee() {
             className="h-7 w-auto object-contain"
           />
         ))}
+      </div>
+      {/* "Trusted by:" pinned to the left, fading into the scroll */}
+      <div className="absolute inset-y-0 left-0 flex items-center pl-5 pr-16 bg-gradient-to-r from-white via-white/95 to-transparent pointer-events-none z-10">
+        <span
+          className="text-xs text-gray-400 font-medium whitespace-nowrap"
+          style={{ fontFamily: 'var(--font-body)' }}
+        >
+          {t('trustedBy')}
+        </span>
       </div>
     </div>
   );
