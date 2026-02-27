@@ -11,29 +11,17 @@ const LOGOS = [
 ];
 
 function Marquee() {
-  const t = useTranslations('hero');
   return (
-    <div className="bg-white border-t border-gray-100">
-      <div className="flex items-center">
-        {/* "Trusted by:" label */}
-        <div className="shrink-0 px-6 py-4 border-r border-gray-200">
-          <p className="text-gray-500 text-sm font-medium whitespace-nowrap" style={{ fontFamily: 'var(--font-body)' }}>
-            {t('trustedBy')}
-          </p>
-        </div>
-        {/* Scrolling logos */}
-        <div className="overflow-hidden flex-1">
-          <div className="flex animate-marquee gap-12 items-center py-4 w-max">
-            {[...LOGOS, ...LOGOS].map((logo, i) => (
-              <img
-                key={i}
-                src={logo.src}
-                alt={logo.name}
-                className="h-7 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity px-2"
-              />
-            ))}
-          </div>
-        </div>
+    <div className="bg-white border-t border-gray-100 overflow-hidden py-4">
+      <div className="flex animate-marquee gap-16 items-center w-max">
+        {Array.from({ length: 8 }, () => LOGOS).flat().map((logo, i) => (
+          <img
+            key={i}
+            src={logo.src}
+            alt={logo.name}
+            className="h-7 w-auto object-contain"
+          />
+        ))}
       </div>
     </div>
   );
@@ -41,6 +29,7 @@ function Marquee() {
 
 function RotatingIndustry({ industries }: { industries: string[] }) {
   const [index, setIndex] = useState(0);
+  const longest = industries.reduce((a, b) => b.length > a.length ? b : a, '');
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -50,15 +39,17 @@ function RotatingIndustry({ industries }: { industries: string[] }) {
   }, [industries.length]);
 
   return (
-    <div className="relative h-[1.1em] overflow-hidden inline-block min-w-[220px] md:min-w-[340px]">
+    <div className="relative overflow-hidden w-max" style={{ height: '1.15em' }}>
+      {/* Invisible sizer: sizes the container to the widest word */}
+      <span className="invisible whitespace-nowrap">{longest}</span>
       <AnimatePresence mode="wait">
         <motion.span
           key={index}
-          initial={{ y: 40, opacity: 0 }}
+          initial={{ y: '100%', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -40, opacity: 0 }}
+          exit={{ y: '-100%', opacity: 0 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute left-0 text-white"
+          className="absolute inset-0 text-white whitespace-nowrap"
         >
           {industries[index]}
         </motion.span>
