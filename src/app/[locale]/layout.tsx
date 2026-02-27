@@ -1,21 +1,8 @@
-import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Instrument_Sans } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import '../globals.css';
-
-const instrumentSans = Instrument_Sans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  weight: ['400', '500', '600', '700'],
-});
-
-export const metadata: Metadata = {
-  title: 'BELT | Safety Beyond Protocols',
-  description: 'The ultimate protocol for increasing security inside a factory environment.',
-};
+import { SetLang } from '@/components/SetLang';
 
 type Props = {
   children: React.ReactNode;
@@ -32,13 +19,12 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={instrumentSans.variable}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <SetLang locale={locale} />
+      <NextIntlClientProvider messages={messages}>
+        {children}
+      </NextIntlClientProvider>
+    </>
   );
 }
 

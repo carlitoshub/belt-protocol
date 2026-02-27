@@ -1,5 +1,12 @@
 import type { Metadata } from 'next';
+import { Instrument_Sans } from 'next/font/google';
 import './globals.css';
+
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['400', '500', '600', '700'],
+});
 
 export const metadata: Metadata = {
   title: 'BELT | Safety Beyond Protocols',
@@ -11,5 +18,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <html suppressHydrationWarning className={instrumentSans.variable}>
+      <body>{children}</body>
+    </html>
+  );
 }
